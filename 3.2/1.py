@@ -12,9 +12,9 @@ class Pizzeria:
 
     async def make_pizza(self, order_id: int) -> None:
         cook_time = randint(2, 5)
-        print(f"Пиццерия '{self.name}'начала готовить пиццу для заказа № {order_id:02}")
+        print(f"Пиццерия '{self.name}'начала готовить пиццу для заказа № {order_id:03}")
         await asyncio.sleep(cook_time)
-        print(f"Пиццерия '{self.name}' закончила готовить пиццу для заказа № {order_id:02}")
+        print(f"Пиццерия '{self.name}' закончила готовить пиццу для заказа № {order_id:03}")
 
 
 async def main():
