@@ -4,7 +4,7 @@ from time import sleep
 
 async def fetch_data():
     print("Загрузка данных...")
-    await asyncio.sleep(8)
+    await asyncio.sleep(2)
     return "Данные"
 
 
