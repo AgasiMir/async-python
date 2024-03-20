@@ -26,5 +26,5 @@ def proper_budget_3(n):
     return f"{n:_}"
 
 
-budget = 100000000
+budget = 12000000
 print(proper_budget_3(budget))
