@@ -10,4 +10,5 @@ disable = missing-function-docstring,
         invalid-name,
         unused-import,
         no-member,
-        no-name-in-module
+        no-name-in-module,
+        global-statement,
