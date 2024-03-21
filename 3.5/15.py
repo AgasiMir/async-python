@@ -21,7 +21,7 @@ async def main():
 
     await task1
     await task2
-    await task3
+    await task3 # Вообще-то достаточно одной await task№n команды
 
 
 asyncio.run(main())
