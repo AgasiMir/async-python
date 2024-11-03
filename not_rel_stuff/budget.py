@@ -4,7 +4,7 @@ def proper_budget_1(n):
     res = ""
     for i, j in enumerate(n):
         if not i % 3:
-            res += "_" + j
+            res += " " + j
         else:
             res += j
 
@@ -15,7 +15,7 @@ def proper_budget_1(n):
 def proper_budget_2(n):
     n = str(n)[::-1]
     res = "".join(
-        ["_" + j if not i % 3 else j for i, j in enumerate(n, 1)][::-1]
+        [" " + j if not i % 3 else j for i, j in enumerate(n, 1)][::-1]
     ).strip("_")
 
     return res
@@ -23,8 +23,7 @@ def proper_budget_2(n):
 
 # вариант №3
 def proper_budget_3(n):
-    return f"{n:_}"
-
+    return f"{n:_}".replace('_', " ")
 
 budget = 12000000
 print(proper_budget_3(budget))
