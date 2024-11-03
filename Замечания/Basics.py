@@ -58,8 +58,12 @@ async def Async_main():
 
     """3 вариант. При использовании метода gather, можно обоойтись без asyncio.create_task"""
 
-    tasks = [поставить_чайник(4), сделать_бутерброды(3)]
-    await asyncio.gather(*tasks)
+    # tasks = [поставить_чайник(4), сделать_бутерброды(3)]
+    # await asyncio.gather(*tasks)
+
+    """4 вариант. При использовании метода gather, можно обоойтись без asyncio.create_task"""
+
+    await asyncio.gather(*[поставить_чайник(4), сделать_бутерброды(3)])
 
 
 start = time.time()
